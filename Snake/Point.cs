@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,17 @@ namespace Snake
         public int x;
         public int y;
         public char symb;
+
+        public Point() 
+        {
+        }
+
+        public Point(int _x, int _y, char _symb)
+        {
+            x = _x;
+            y = _y;
+            symb = _symb;
+        }
 
         public void Draw()
         {
